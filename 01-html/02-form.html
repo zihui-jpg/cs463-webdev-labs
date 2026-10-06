@@ -9,6 +9,67 @@
   <body>
     <main>
       <!-- Add your code here -->
+      <h1>Roth IRA Calculator</h1>
+      <form method="post" action="/submitform">
+        <div>
+          <label for="balance">Balance ($)</label><br />
+          <input type="text" id="balance" />
+        </div>
+        <br />
+
+        <div>
+          <label for="contribution">Annual contribution ($)</label>
+          <br /><!-- Assuming Annual Contribution (4) is a typo -->
+          <input type="text" id="contribution" />
+        </div>
+        <br />
+
+        <div>
+          <span>Maximize contributions?</span> <br />
+          <input type="radio" id="maximize-yes" name="maximize" value="yes" />
+          <label for="maximize-yes">Yes</label>
+          <input type="radio" id="maximize-no" name="maximize" value="no" />
+          <label for="maximize-no">No</label>
+        </div>
+        <br />
+
+        <div>
+          <label for="return">Expected rate of return (%)</label> <br />
+          <!-- Assuming Expected Rate of return (5) is a typo -->
+          <input type="number" id="return" />
+        </div>
+        <br />
+
+        <div>
+          <label for="current-age">Current age</label> <br />
+          <input type="number" id="current-age" />
+        </div>
+        <br />
+
+        <div>
+          <label for="retirement-age">Retirement age</label> <br />
+          <input type="number" id="retirement-age" />
+        </div>
+        <br />
+
+        <div>
+          <label for="marginal-tax">Marginal tax rate (%)</label> <br />
+          <input type="number" id="marginal-tax" />
+        </div>
+        <br />
+
+        <div>
+          <input type="submit" value="Calculate" />
+          <input type="reset" value="Reset" />
+        </div>
+
+        <p>
+          This exercise is a simplified version of the Roth IRA Calculator at
+          <a href="https://www.calculator.net/roth-ira-calculator.html"
+            >Calculator.net</a
+          >
+        </p>
+      </form>
     </main>
   </body>
 </html>
